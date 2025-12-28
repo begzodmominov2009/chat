@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { useState, useEffect } from "react";
 
 // Auth Pages
-import Login from "./features/auth/pages/Login";
 import Register from "./features/auth/pages/Register";
 
 // Main Pages
@@ -12,6 +11,7 @@ import ChatPages from "./features/chat/pages/ChatPages";
 import PostPages from "./features/posts/pages/PostPages";
 import StoryPage from "./features/stories/pages/StoryPage";
 import ProfilePages from "./features/profile/pages/ProfilePages";
+import Login from "./features/auth/pages/login";
 
 function App() {
   const [user, setUser] = useState(null);
