@@ -127,7 +127,7 @@ export default function UserChatPages() {
                             key={msg.id}
                             className={`flex ${msg.from === currentUser.id ? "justify-end" : "justify-start"}`}
                         >
-                            <div className={`px-4 py-2 rounded-2xl max-w-[70%] ${msg.from === currentUser.id ? "bg-blue-600 text-white" : "bg-gray-300"}`}>
+                            <div className={`pl-4 pr-2 py-2 flex items-end rounded-2xl max-w-[70%] ${msg.from === currentUser.id ? "bg-blue-600 text-white" : "bg-gray-300"}`}>
                                 <p>{msg.text}</p>
                                 {msg.from === currentUser.id && (
                                     <span className="ml-2 text-[10px] opacity-70 float-right">
