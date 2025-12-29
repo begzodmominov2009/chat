@@ -12,6 +12,7 @@ import PostPages from "./features/posts/pages/PostPages";
 import StoryPage from "./features/stories/pages/StoryPage";
 import ProfilePages from "./features/profile/pages/ProfilePages";
 import Login from "./features/auth/pages/login";
+import UserChatPages from "./features/chat/pages/UserChatPage";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -36,6 +37,7 @@ function App() {
           <Route index element={<Navigate to="/posts" />} />
           <Route path="stories" element={<StoryPage />} />
           <Route path="chat" element={<ChatPages />} />
+          <Route path="userchat/:id" element={<UserChatPages/>}/>
           <Route path="posts" element={<PostPages />} />
           <Route path="profile/:userId" element={<ProfilePages />} />
         </Route>

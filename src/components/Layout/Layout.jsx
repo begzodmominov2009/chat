@@ -1,14 +1,15 @@
 // src/components/Layout.jsx
 import { Outlet } from "react-router-dom";
-import Sidebar from "../Sidebar/Sidebar";
-import Header from "../Navbar/Navbar";
+// import Sidebar from "../Sidebar/Sidebar";
+// import Header from "../Navbar/Navbar";
 import { useState } from "react";
+import Footer from "../footer/footer";
 
 const Layout = () => {
     const [aside, setAside] = useState(false)
     return (
-        <div className="flex h-screen bg-gray-100">
-            <Sidebar />
+        <div className="flex h-screen bg-gray-20">
+            {/* <Sidebar /> */}
             <main className="flex-1 flex flex-col">
                 {/* <Header /> */}
                 <div className="flex-1 flex overflow-hidden">
@@ -33,6 +34,7 @@ const Layout = () => {
                         </ul>
                     </aside>) : ("")}
                 </div>
+                <Footer />
             </main>
         </div>
     );
